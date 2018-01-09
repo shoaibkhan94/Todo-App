@@ -12,9 +12,8 @@ var port = process.env.PORT || 3000;
 app.use('/assets',express.static('/public'));
 
 app.set('view engine', 'ejs');
-console.log(config.getDbConnectionString());
 mongoose.connect(config.getDbConnectionString());
 setupController(app);
 apiController(app);
 
-app.listen(3000);
+app.listen(port);
