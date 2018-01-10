@@ -1,13 +1,13 @@
-var express = require('express');
-var mongoose = require('mongoose');
+const express = require('express');
+const mongoose = require('mongoose');
 
-var config = require('./config')
-var setupController = require('./controllers/setupController')
-var apiController = require('./controllers/apiController');
+const config = require('./config');
+const setupController = require('./controllers/setupController');
+const apiController = require('./controllers/apiController');
 
-var app = express();
+const app = express();
 
-var port = process.env.PORT || 3000;
+const port = process.env.PORT || 3000;
 
 app.use('/assets',express.static('/public'));
 

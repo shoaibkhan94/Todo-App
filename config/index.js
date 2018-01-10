@@ -1,4 +1,4 @@
-var configObj = require('./config');
+const configObj = require('./config');
 
 module.exports = {
 
